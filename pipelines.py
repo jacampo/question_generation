@@ -152,7 +152,7 @@ class QGPipeline:
 
                     inputs.append({"answer": answer_text, "source_text": source_text})
                     
-                 catch ValueError:
+                except:
                     print("Error")
                     print("ANSWER ",answer_text)
                     print("TEXT",sent)
