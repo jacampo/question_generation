@@ -70,7 +70,7 @@ class QGPipeline:
         outs = self.model.generate(
             input_ids=inputs['input_ids'].to(self.device), 
             attention_mask=inputs['attention_mask'].to(self.device), 
-            max_length=32,
+            max_length=40,
             num_beams=4,
         )
         
