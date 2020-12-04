@@ -72,6 +72,7 @@ class QGPipeline:
             attention_mask=inputs['attention_mask'].to(self.device), 
             max_length=40,
             num_beams=4,
+            num_return_sequences=4
         )
         
         questions = [self.tokenizer.decode(ids, skip_special_tokens=True) for ids in outs]
