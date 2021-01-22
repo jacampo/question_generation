@@ -46,7 +46,7 @@ class QGPipeline:
         else:
             self.model_type = "bart"
 
-    def get_model_token():
+    def get_model_token(self):
         return self.model, self.tokenizer
     
     def __call__(self, inputs: str):
