@@ -77,7 +77,7 @@ class QGPipeline:
             num_beams=4,
             #num_return_sequences=4
         )
-        print(outs)
+        #print(outs)
         
         questions = [self.tokenizer.decode(ids, skip_special_tokens=True) for ids in outs]
         return questions
